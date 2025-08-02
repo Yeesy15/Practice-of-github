@@ -1,1 +1,3 @@
 I fixed bugs
+1st bug 
+2nd bug

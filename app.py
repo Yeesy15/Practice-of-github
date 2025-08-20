@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate 
 from langchain_core.output_parsers import JsonOutputParser
 import streamlit as st
-#import json
 import os
 
 load_dotenv()
@@ -35,12 +34,6 @@ if st.button('Get Steps'):
 
     print(type(result1))
 
-#    try:
- #       result = json.loads(result1)
-  #  except json.JSONDecodeError:
-   #     st.error("Error: LLM did not return valid JSON. Output was:")
-    #    st.write(result1)
-     #   result = []
 
     st.header("List of Subtasks : \n")
     
@@ -64,3 +57,4 @@ if st.button('Get Steps'):
 
     for agent in agent_subtask.keys():  # iterate through each agent and their assigned subtask 
         return_status(agent, agent_subtask[agent])
+
